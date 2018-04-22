@@ -1,4 +1,4 @@
-$tarballPath = Join-Path -Path $PSScriptRoot -ChildPath 'swift.tar.gz'
+$tarballPath = Join-Path -Path $PSScriptRoot -ChildPath 'swift-DEVELOPMENT-SNAPSHOT-2018-04-21-a-ubuntu16.10.tar.gz'
 $url = 'https://swift.org/builds/development/ubuntu1610/swift-DEVELOPMENT-SNAPSHOT-2018-04-21-a/swift-DEVELOPMENT-SNAPSHOT-2018-04-21-a-ubuntu16.10.tar.gz'
 
 if (-not (Test-Path $tarballPath))
