@@ -6,6 +6,7 @@ if (-not (Test-Path $tarballPath))
     Write-Host 'Swift tarball not found, downloading...' -NoNewLine
     $start = Get-Date
 
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     $wc = New-Object System.Net.WebClient
     $wc.DownloadFile($url, $tarballPath)
 
