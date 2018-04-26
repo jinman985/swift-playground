@@ -1,5 +1,6 @@
-$tarballPath = Join-Path -Path $PSScriptRoot -ChildPath 'swift-DEVELOPMENT-SNAPSHOT-2018-04-21-a-ubuntu16.10.tar.gz'
-$url = 'https://swift.org/builds/development/ubuntu1610/swift-DEVELOPMENT-SNAPSHOT-2018-04-21-a/swift-DEVELOPMENT-SNAPSHOT-2018-04-21-a-ubuntu16.10.tar.gz'
+$url = 'https://swift.org/builds/swift-4.0-branch/ubuntu1604/swift-4.0-DEVELOPMENT-SNAPSHOT-2017-12-04-a/swift-4.0-DEVELOPMENT-SNAPSHOT-2017-12-04-a-ubuntu16.04.tar.gz'
+$tarballFileName = $url.Split('/') | Select-Object -Last 1
+$tarballPath = Join-Path -Path $PSScriptRoot -ChildPath $tarballFileName
 
 if (-not (Test-Path $tarballPath))
 {
